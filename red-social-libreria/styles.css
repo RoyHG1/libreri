@@ -1,0 +1,108 @@
+/* html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: rgb(249, 249, 63);
+}*/
+
+.contenedor-login{
+    
+
+}
+.contenedor-regitro{
+    width: 28rem;
+    background-color: #ffffff;
+    margin: 6rem auto;
+    padding: 1rem 0 2rem 0;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+} 
+.contenedor-regitro h2 {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.navegacion{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 3rem 0 0; */
+    /* height: 6rem; */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* border: 1px solid red; */
+    /* padding: 2rem 0; */
+}
+.barra h1 {
+    padding-left: 3rem;
+}
+.campo {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+    /* padding: .8rem; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.campo label {
+    font-weight: bold;
+    color: rgb(123, 121, 118);
+}
+.campo input {
+    width: 100%;
+    border: 1px solid rgba(155, 155, 197, 0.513);
+    border-radius: 1rem;
+}
+.campo input::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(123, 121, 118);
+}
+.form button {
+    background-color: #ffc107;
+    width: 100%;
+    border-radius: 2rem;
+    padding: .5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border: none;
+    font-weight: bold;
+    transform: .1s;
+}
+.form button:hover {
+    background-color: #e4ae0c;
+    color: rgb(31, 30, 30);
+}
+
+.modal_registro{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.706);
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+
+.modal_login{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.706);
+    display: none;
+    top: 0%;
+    left: 0%; 
+}
