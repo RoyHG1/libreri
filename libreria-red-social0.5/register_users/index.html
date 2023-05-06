@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>libreria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+
+<body>
+    <div class="body">
+
+        <div class="nav">
+            <header class="nav_header">
+                <h1 class="nav_title">e-commerce</h1>
+            </header>
+    
+            <div class="nav_inputs">
+                <input class="nav_input" type="button" value="login" id="btn_modal_login">
+                <input class="nav_input" type="button" value="registro" id="btn_modal_registro">
+            </div>
+        </div>
+    
+        <div id="modal_login">
+            <div class="contenedor_login">
+                <div class="bloque">
+                    <div class="cerrar">x</div>
+                    <h1 class="login_title">login</h1>
+                </div>
+                <div class="login_inputs">
+                    <input class="login_input" type="text" placeholder="correo" id="login_email">
+                    <input class="login_input" type="password" placeholder="contraseña" id="login_password">
+                    <input class="login_submit nav_input" type="submit" id="btn_login" value="enviar">
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal_registro">
+            
+            <div class="contenedor_regitro">
+                <div class="cerrar">
+                    <p class="cerrar_x">x</p>
+                </div>
+                <h2 class="registro_title">registro</h2>
+          
+                <form class="form" action="registro.php" method="post" id="form">
+                    <div class="campo">
+                        <label class="campo_label" for="registro_nombre">nombre</label>
+                        <input class="campo_input" name="nombre" type="text" placeholder="ingresar nombre" id="registro_nombre">
+                    </div>
+                    <div class="campo">
+                        <label class="campo_label" for="apellido">apellido</label>
+                        <input class="campo_input" type="text" placeholder="ingresar apellido" id="apellido" name="apellido">
+                    </div>
+                    <div class="campo">
+                        <label class="campo_label" for="email">email</label>
+                        <input class="campo_input" type="email" placeholder="ingresar email" id="email" name="email">
+                    </div>
+                    <div class="campo">
+                        <label class="campo_label" for="password">password</label>
+                        <input class="campo_input" type="password" placeholder="ingresar apellido" id="password" name="password">
+                    </div>
+                    <button  id="btn_registro" class="form_button">enviar</button>
+                    <div class="campo"><p class="mensaje_register" id="mensaje_register"></p></div>
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
